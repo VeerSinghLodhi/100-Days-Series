@@ -1,0 +1,7 @@
+
+
+printf("GitHub.com/VeerSinghLodi");
+cout<<"GitHub.com/VeerSinghLodi";
+System.out.println("GitHub.com/VeerSinghLodi");
+console.log("GitHub.com/VeerSinghLodi");
+print("GitHub.com/VeerSinghLodi")
