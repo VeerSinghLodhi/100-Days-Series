@@ -65,7 +65,7 @@ Feel free to reach out or follow my progress on:
 <a href="https://www.linkedin.com/in/veer-singh-lodhi-6786aa325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="veer singh lodhi" height="30" width="40" /></a>
   <a href="https://youtube.com//channel//UCFy1I_EXFiaI7gtsVV8ehog" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="youtube.com/channel/UCFy1I_EXFiaI7gtsVV8ehog" height="30" width="40" /></a>
 </p>
-Let’s learn and grow together! 💻✨
+Let’s learn and grow together! 💻✨👌
 
 ---
 
