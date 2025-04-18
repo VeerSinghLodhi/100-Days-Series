@@ -3,14 +3,16 @@
 const getMatrixMultiplication=(a,b)=>{
     const result=[];
     // Performing Matrix Multiplication
-    for(let i=0;i<a.length;i++){
-        for(let j=0;j<b[0].length;j++){
-            const row=[];
-            for(let k=0;k<a[0].length;k++){
-                row.push(a[i][k]*b[k][j]);
+    for (let i = 0; i < a.length; i++) {
+        const row = [];
+        for (let j = 0; j < b[0].length; j++) {
+            let sum = 0;
+            for (let k = 0; k < a[0].length; k++) {
+                sum += a[i][k] * b[k][j];
             }
-            result.push(row);
+            row.push(sum);
         }
+        result.push(row);
     }
     return result;
 }
