@@ -31,7 +31,7 @@ class MultiplicationOfTwoMatrices{
         for(int i=0;i<rowsA;i++){
             for(int j=0;j<colsB;j++){
                 for(int k=0;k<colsA;k++){
-                    c[i][j]=a[i][k]*b[k][j];
+                    c[i][j]+=a[i][k]*b[k][j];
                 }
             }
         }
