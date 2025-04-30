@@ -5,8 +5,9 @@ struct DoublyLL {
     int data;
     DoublyLL *prev, *next;
 };
+
 struct DoublyLL *start = nullptr;
-struct DoublyLL *end = nullptr;
+struct DoublyLL *last = nullptr;  
 
 // Function to add new nodes.
 void addNode() {
@@ -17,19 +18,20 @@ void addNode() {
         cout << "\nEnter data: ";
         cin >> ptr->data;
         if (start == nullptr) {
-            start = end = ptr;
-            start->prev = end;
-            end->next = start;
+            start = last = ptr;
+            start->prev = last;
+            last->next = start;
         } else {
-            ptr->prev = end;
+            ptr->prev = last;
             ptr->next = start;
-            end->next = ptr;
+            last->next = ptr;
             start->prev = ptr;
-            end = ptr;
+            last = ptr;
         }
         cout << "\nNew Node Added";
     }
 }
+
 // Function to traverse from head to end.
 void traverseHeadToEnd() {
     if (start == nullptr) {
@@ -49,12 +51,12 @@ void traverseEndToHead() {
     if (start == nullptr) {
         cout << "\nDoubly Linked List is empty!";
     } else {
-        DoublyLL *temp = end;
+        DoublyLL *temp = last;
         do {
             cout << "\nData: " << temp->data;
             cout << "\n----------------------";
             temp = temp->prev;
-        } while (temp != end);
+        } while (temp != last);
     }
 }
 
@@ -70,17 +72,17 @@ void delNode() {
         DoublyLL *temp = start;
         do {
             if (temp->data == no) {
-                if (temp == start && temp == end) {
+                if (temp == start && temp == last) {
                     // Only one node in the list
-                    start = end = nullptr;
+                    start = last = nullptr;
                 } else if (temp == start) {
                     start = start->next;
-                    start->prev = end;
-                    end->next = start;
-                } else if (temp == end) {
-                    end = end->prev;
-                    end->next = start;
-                    start->prev = end;
+                    start->prev = last;
+                    last->next = start;
+                } else if (temp == last) {
+                    last = last->prev;
+                    last->next = start;
+                    start->prev = last;
                 } else {
                     temp->prev->next = temp->next;
                     temp->next->prev = temp->prev;
