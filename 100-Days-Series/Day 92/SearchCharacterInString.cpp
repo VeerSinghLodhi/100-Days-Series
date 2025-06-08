@@ -15,7 +15,7 @@ int getFindCharacter(string str,char ch){
 int main(){
     string str;
     cout<<"\nEnter a string : ";
-    getLine(cin,str);
+    getline(cin,str);
     cout<<"\nEnter Character to find : ";
     char ch;
     cin>>ch;
