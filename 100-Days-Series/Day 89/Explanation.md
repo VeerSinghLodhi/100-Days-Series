@@ -77,4 +77,4 @@ This Java program counts the number of **even** and **odd** numbers in a given a
 2. Compile the program using:
    ```bash
    javac CountEvenOdd.java
-   java CountEvenOdd
+   java CountEvenOdd.
